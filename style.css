@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-light: hsl(217, 12%, 63%);
+  --color-grey-medium: hsla(216, 12%, 54%, 0.207);
+  --color-blue-dark: hsl(213, 19%, 18%);
+  --color-blue-darker: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Overpass', sans-serif;
+  color: var(--color-white);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-blue-darker);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  max-width: 35rem;
+  padding: 3rem 2rem;
+  margin: 0 2rem;
+  background-color: var(--color-blue-dark);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.card__logo {
+  background-color: var(--color-grey-medium);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.card__text > h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.card__text > p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--color-grey-light);
+}
+
+.rating__btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-grey-medium);
+  color: var(--color-grey-light);
+  border-radius: 50%;
+  transition: all 0.25s;
+}
+
+.rating-btn:hover {
+  background-color: var(--color-grey-light);
+  color: var(--color-white);
+}
+
+.rating-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  color: inherit;
+  padding: 1rem 0;
+  border-radius: 5rem;
+  letter-spacing: 2px;
+  transition: all 0.25s;
+}
+
+.submit-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.card--rating {
+  display: none;
+}
+
+.card--thank-you {
+  align-items: center;
+  text-align: center;
+  transform: translateX(100%);
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.selected {
+  background-color: var(--color-grey-medium);
+  padding: 0 1.5rem;
+  border-radius: 5rem;
+  line-height: 3rem;
+  color: var(--color-primary);
+}
+
+.show {
+  display: flex;
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution a {
+  color: var(--color-primary);
+}
