@@ -2,7 +2,7 @@
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
-✨ Here is the live site URL:
+✨ Here is the live site URL: [https://fementor-rating-card.netlify.app](https://fementor-rating-card.netlify.app)
 
 ## The challenge
 
