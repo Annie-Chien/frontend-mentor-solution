@@ -2,7 +2,7 @@
 
 This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
 
-✨ Here is the live site URL:
+✨ Here is the live site URL:[https://fementor-url-shortening-page.netlify.app](https://fementor-url-shortening-page.netlify.app)
 
 ## The challenge
 
@@ -17,7 +17,7 @@ Users should be able to:
 
 ## Screenshot
 
-![](./images/screenshot/shortly.png);
+![](./images/screenshot/shortly.png)
 
 ## Built with 🔧
 
@@ -33,7 +33,7 @@ Users should be able to:
 // COPY
 navigator.clipboard.readText(text);
 
-// Paste
+// PASTE
 navigator.clipboard.readText(text);
 ```
 
@@ -43,4 +43,5 @@ navigator.clipboard.readText(text);
 
 ## Resources
 [Shrtco](https://shrtco.de) - url shortening API
+
 [Font Awesome](https://fontawesome.com) - hamburger & footer social media icons
