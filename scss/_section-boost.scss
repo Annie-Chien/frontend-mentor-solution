@@ -1,0 +1,22 @@
+.section-boost{
+    padding: 8rem 0;
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-primary-violet;
+    text-align: center;
+
+
+    @include respond(tablet) {
+        background-image: url('../images/bg-boost-desktop.svg');
+
+      }
+
+    h2 {
+        color: $color-white;
+    }
+
+    button{
+        margin: auto;
+    }
+}

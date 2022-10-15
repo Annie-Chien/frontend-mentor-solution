@@ -1,0 +1,139 @@
+.nav {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+
+  @include respond(tablet) {
+    width: 85%;
+    margin: auto;
+    gap: 2rem;
+  }
+
+  &__logo {
+    img {
+      display: block;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 1rem;
+    background-color: $color-primary-violet;
+    z-index: 100;
+    padding: 1rem 2rem;
+    transform: translateX(150%);
+    opacity: 0;
+    transition: all .6s;
+
+    @include respond(tablet) {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+
+    &.show{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+
+      @include respond(tablet) {
+        color: $color-grayish-violet;
+      }
+    }
+  }
+
+  &__toggle {
+    font-size: 3rem;
+    color: $color-grayish-violet;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover{
+      transform: rotate(180deg);
+      color: $color-primary-violet;
+    }
+
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+}
+
+.menu-list,
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 0;
+
+  @include respond(tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  & > li{
+    width: 100%;
+    text-align: center;
+    transition: all .25s;
+
+
+    @include respond(tablet) {
+      width: fit-content;
+      border-bottom: 2px solid transparent;
+
+    }
+  }
+
+  & > li:hover{
+    background-color: $color-violet-dark;
+
+
+    @include respond(tablet) {
+      border-bottom: 2px solid $color-primary-cyan;
+      background-color: transparent;
+    }
+  }
+
+
+}
+
+.menu-list {
+  border-bottom: 0.5px solid $color-gray;
+
+  @include respond(tablet) {
+    border-bottom: none;
+    margin-right: auto;
+
+  }
+  
+}
+
+.menu-buttons {
+  & > li:last-child {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    border-bottom: transparent;
+  }
+
+  a.btn-primary {
+    color: $color-white;
+  }
+}

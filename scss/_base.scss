@@ -1,0 +1,85 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+
+    @include respond(tablet){
+        font-size: 70%
+      }
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: $color-grayish-violet;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+
+.bg-violet{
+    background-color: $bg-color-violet;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+
+}
+
+.heading-1{
+    font-size: 3.5rem;
+    color: $color-violet-dark;
+    line-height: 1.2;
+    margin: 2rem 0;
+
+    @include respond(tablet){
+        font-size: 6rem;
+      }
+}
+
+.heading-2{
+    font-size: 3rem;
+    color: $color-violet-dark;
+    margin: 2rem 0;
+}
+
+// BUTTON
+.btn-primary{
+    display: block;
+    background-color: $color-primary-cyan;
+    color: $color-white;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    text-transform: capitalize;
+
+    font-family: inherit;
+    transition: all .25s;
+
+    &:hover, &:active{
+        background-color: darken($color-primary-cyan, 10);
+    }
+
+}
+
+.btn-secondary{
+    padding: 1rem;
+    color: $color-white;
+    background-color: $color-primary-cyan;
+    border-radius: 1rem;
+    font-family: inherit;
+    transition: all .25s;
+
+    &:hover, &:active{
+        background-color: darken($color-primary-cyan, 10);
+    }
+}
