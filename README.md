@@ -2,8 +2,9 @@
 A collection of all my Frontend Mentor challenge solutions.
 
 
-| Project     |  Demo       | Source Code |
+| Project     |  🖥 Demo       | :octocat: Source Code  |
 | ----------- | ----------- | ----------- |
 | Product preview card  |  [Live](https://frontendmentor-product-preview-card.netlify.app)  | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/product-preview-card) |
 | Interactive rating card | [Live](https://fementor-rating-card.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/interactive-rating-card)|
 | URL shortening page | [Live](https://fementor-url-shortening-page.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/url-shortening-page)
+| IP address tracker | [Live](https://fementor-ip-address-tracker.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/ip-address-tracker)
