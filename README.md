@@ -2,7 +2,7 @@
 
 This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 
-✨ Here is the live site URL:https://fementor-url-shortening-page.netlify.app
+✨ Here is the live site URL: https://fementor-ip-address-tracker.netlify.app
 
 ## The challenge
 Your users should be able to:
