@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (min-width: 56.25em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  height: 100%;
+}
+
+.section-main {
+  height: 35%;
+  min-height: 250px;
+  padding: 1rem 0;
+  background-image: linear-gradient(to right top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3)), url("../images/pattern-bg.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 48em) {
+  .section-main {
+    height: 30%;
+  }
+}
+.section-main h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(43, 43, 43, 0.2);
+  margin: 2rem 0;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+}
+.form.invalid {
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem 0.5rem rgb(214, 74, 71);
+}
+@media (min-width: 48em) {
+  .form {
+    width: 50%;
+  }
+}
+.form__input {
+  flex: 0 1 85%;
+  padding: 1.5rem;
+  font-size: inherit;
+  border-radius: 1rem 0 0 1rem;
+  border: none;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__button {
+  flex: 0 1 15%;
+  background-color: hsl(0deg, 0%, 17%);
+  border-radius: 0 1rem 1rem 0;
+  transition: background-color 0.25s;
+}
+.form__button:hover {
+  background-color: rgba(43, 43, 43, 0.6);
+}
+
+.info {
+  width: 90%;
+  padding: 2rem 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  bottom: -10%;
+  transform: translateY(50%);
+  z-index: 100;
+}
+@media (min-width: 48em) {
+  .info {
+    width: 80%;
+    flex-direction: row;
+    bottom: 0;
+  }
+}
+.info__box {
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .info__box {
+    text-align: left;
+    padding: 0 2rem;
+    flex: 1 1;
+  }
+}
+.info__box h6 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 59%);
+}
+.info__box p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 17%);
+}
+@media (min-width: 48em) {
+  .info__box:not(:last-child) {
+    border-right: 1px solid hsl(0deg, 0%, 59%);
+  }
+}
+
+.section-map {
+  height: 65%;
+  position: relative;
+  z-index: 50;
+}
+@media (min-width: 48em) {
+  .section-map {
+    height: 70%;
+  }
+}
+
+#map {
+  height: 100%;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  color: hsl(0deg, 0%, 17%);
+}
+
+.attribution a {
+  color: purple;
+}
+
+.popup {
+  font-size: 1.7rem;
+  color: purple;
+}
+
+.error-msg {
+  color: rgb(250, 114, 111);
+  margin: 0.5rem 0;
+  font-weight: 700;
+  text-shadow: 0 0 2px black;
+}/*# sourceMappingURL=style.css.map */

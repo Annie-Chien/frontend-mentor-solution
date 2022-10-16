@@ -1,0 +1,211 @@
+// Variables
+$color-gray-dark: hsl(0, 0%, 17%);
+$color-gray: hsl(0, 0%, 59%);
+$color-white: rgb(255, 255, 255);
+$color-alert: rgb(214, 74, 71);
+
+//Mixin
+@mixin respond($breakpoint) {
+  @if $breakpoint == 'laptop' {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == 'desktop' {
+    @media (min-width: 56.25em) {
+      @content;
+    }
+  }
+}
+
+// Basic Setting
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(desktop) {
+    font-size: 70%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+////////////////////////////////////////////
+// Styles
+////////////////////////////////////////////
+main {
+  height: 100%;
+}
+
+//SECTION-TOP
+.section-main {
+  height: 35%;
+  min-height: 250px;
+  padding: 1rem 0;
+  background-image: linear-gradient(
+      to right top,
+      rgba($color-white, 0),
+      rgba($color-white, 0.3)
+    ),
+    url('../images/pattern-bg.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @include respond(laptop) {
+    height: 30%;
+  }
+
+  h1 {
+    color: $color-white;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba($color-gray-dark, 0.2);
+    margin: 2rem 0;
+  }
+}
+
+.form {
+  width: 90%;
+  display: flex;
+
+  &.invalid {
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0.5rem $color-alert;
+  }
+
+  @include respond(laptop) {
+    width: 50%;
+  }
+
+  &__input {
+    flex: 0 1 85%;
+    padding: 1.5rem;
+    font-size: inherit;
+    border-radius: 1rem 0 0 1rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    flex: 0 1 15%;
+    background-color: $color-gray-dark;
+    border-radius: 0 1rem 1rem 0;
+    transition: background-color 0.25s;
+
+    &:hover {
+      background-color: rgba($color-gray-dark, 0.6);
+    }
+  }
+}
+
+.info {
+  width: 90%;
+  padding: 2rem 0;
+  background-color: $color-white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  bottom: -10%;
+  transform: translateY(50%);
+  z-index: 100;
+
+  @include respond(laptop) {
+    width: 80%;
+    flex-direction: row;
+    bottom: 0;
+  }
+
+  &__box {
+    text-align: center;
+    @include respond(laptop) {
+      text-align: left;
+      padding: 0 2rem;
+      flex: 1 1;
+    }
+
+    h6 {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $color-gray;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $color-gray-dark;
+    }
+
+    &:not(:last-child) {
+      @include respond(laptop) {
+        border-right: 1px solid $color-gray;
+      }
+    }
+  }
+}
+
+// SECTION: BOTTOM
+.section-map {
+  height: 65%;
+  position: relative;
+  z-index: 50;
+
+  @include respond(laptop) {
+    height: 70%;
+  }
+}
+
+#map {
+  height: 100%;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  color: $color-gray-dark;
+}
+
+.attribution a {
+  color: purple;
+}
+
+.popup {
+  font-size: 1.7rem;
+  color: purple;
+}
+
+.error-msg {
+  color: rgb(250, 114, 111);
+  margin: 0.5rem 0;
+  font-weight: 700;
+  text-shadow: 0 0 2px black;
+}
