@@ -23,7 +23,7 @@ Users should be able to:
 
 To build a FAQ accordion card without using JavaScript, the solution I can think of is using **radio buttons** OR **checkboxes**. In this way, we can take the advantage of CSS `:checked` pseudo-class to achieve the show/hide effect.
 
-I've build a similar FAQ card with **checkboxes** before. **Checkboxes** are perfect for the toggle effect. 
+I've built a similar FAQ card with **checkboxes** before. **Checkboxes** are perfect for the toggle effect. 
 
 The reason why I deicided to use **radio buttons** instead of checkboxes is that I want to <ins>show one FAQ at a time</ins>. (Only one radio button in a set can be selected at the same time.)
 
