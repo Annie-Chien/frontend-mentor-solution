@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          class="boxImg-desktop"
+          src="./images/illustration-box-desktop.svg"
+          alt="box"
+        />
+        <div class="card__img">
+          <picture class="bg-picture-mobile">
+            <img
+              src="./images/bg-pattern-mobile.svg"
+              alt="background pattern"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width:800px)"
+              srcset="./images/illustration-woman-online-desktop.svg"
+            />
+            <img
+              src="./images/illustration-woman-online-mobile.svg"
+              alt="illustration of a woman surfing the internet"
+              class="illustration"
+            />
+          </picture>
+        </div>
+        <div class="card__text">
+          <h2 class="card__title">FAQ</h2>
+          <div class="QA-list">
+            <div class="QA-item">
+              <p class="question">How many team members can I invite?</p>
+              <input type="radio" name="toggle" id="toggle--1" />
+              <label for="toggle--1" class="toggle-btn"
+                ><img src="./images/icon-arrow-down.svg" alt="arrow down"
+              /></label>
+              <p class="answer">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+            <div class="QA-item">
+              <p class="question">What is the maximum file upload size?</p>
+              <input type="radio" name="toggle" id="toggle--2" />
+              <label for="toggle--2" class="toggle-btn"
+                ><img src="./images/icon-arrow-down.svg" alt="arrow down"
+              /></label>
+              <p class="answer">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+            <div class="QA-item">
+              <p class="question">How do I reset my password?</p>
+              <input type="radio" name="toggle" id="toggle--3" />
+              <label for="toggle--3" class="toggle-btn"
+                ><img src="./images/icon-arrow-down.svg" alt="arrow down" />
+              </label>
+              <p class="answer">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+            <div class="QA-item">
+              <p class="question">Can I cancel my subscription?</p>
+              <input type="radio" name="toggle" id="toggle--4" />
+
+              <label for="toggle--4" class="toggle-btn"
+                ><img src="./images/icon-arrow-down.svg" alt="arrow down" />
+              </label>
+              <p class="answer">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+            <div class="QA-item">
+              <p class="question">Do you provide additional support?</p>
+              <input type="radio" name="toggle" id="toggle--5" />
+
+              <label for="toggle--5" class="toggle-btn"
+                ><img src="./images/icon-arrow-down.svg" alt="arrow down" />
+              </label>
+              <p class="answer">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Annie-Chien">Annie Chien</a>.
+      </div>
+    </div>
+  </body>
+</html>
