@@ -2,7 +2,7 @@
 
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
 
-✨ Here is the live site URL:
+✨ Here is the live site URL: https://fementor-accordion-faq.netlify.app
 
 ## The challenge
 Users should be able to:
