@@ -10,3 +10,4 @@ A collection of all my Frontend Mentor challenge solutions.
 | IP address tracker | [Live](https://fementor-ip-address-tracker.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/ip-address-tracker)
 | FAQ accordion card | [Live](https://fementor-accordion-faq.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/faq-accordion-card)|
 | Expense chart | [Live](https://fementor-expense-chart.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/expense-chart) |
+| Time tracker dashboard | [Live](https://fementor-time-tracker.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/time-tracker-dashboard) |
