@@ -9,3 +9,4 @@ A collection of all my Frontend Mentor challenge solutions.
 | URL shortening page | [Live](https://fementor-url-shortening-page.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/url-shortening-page)
 | IP address tracker | [Live](https://fementor-ip-address-tracker.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/ip-address-tracker)
 | FAQ accordion card | [Live](https://fementor-accordion-faq.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/faq-accordion-card)|
+| Expense chart | [Live](https://fementor-expense-chart.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/expense-chart) |
