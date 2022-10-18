@@ -2,7 +2,7 @@
 
 This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). 
 
-✨ Here is the live site URL: https://fementor-accordion-faq.netlify.app
+✨ Here is the live site URL: https://fementor-expense-chart.netlify.app
 
 ## The challenge
 
