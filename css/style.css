@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(27deg, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 50rem;
+  width: 90%;
+}
+.container > * {
+  border-radius: 1rem;
+  box-shadow: 0 0 3px rgba(56, 35, 20, 0.2);
+}
+
+.balance {
+  padding: 2rem;
+  background-color: hsl(10deg, 79%, 65%);
+  color: hsl(33deg, 100%, 98%);
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: repeat(2, max-content);
+  gap: 0.5rem;
+}
+.balance__total {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.balance .img-container {
+  grid-column: 2/3;
+  grid-row: 1/span 2;
+  align-self: center;
+}
+
+.spending {
+  margin-top: 2rem;
+  padding: 2rem 1.5rem;
+  background-color: hsl(33deg, 100%, 98%);
+}
+.spending__title {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: hsl(25deg, 47%, 15%);
+}
+.spending__detail {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.5px solid hsl(28deg, 10%, 53%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.spending__total span {
+  color: hsl(28deg, 10%, 53%);
+}
+.spending__total p {
+  color: hsl(25deg, 47%, 15%);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.spending__rate {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+.spending__rate span {
+  color: hsl(28deg, 10%, 53%);
+}
+.spending__rate p {
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+  order: -1;
+}
+
+.my-chart {
+  width: 100%;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

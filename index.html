@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 
+<!-- Style -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="balance">
+      <span class="balance__title">My balance</span>
+      <p class="balance__total">$921.48</p>
+      <div class="img-container"><img src="./images/logo.svg" alt="logo"></div>
+    </div>
+    <div class="spending">
+      <h3 class="spending__title">Spending - Last 7 days</h3>
+      <div class="bar-chart">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="spending__detail">
+        <div class="spending__total">
+          <span>Total this month</span>
+          <p>$478.33</p>
+        </div>
+        <div class="spending__rate">
+          <span>from last month</span>
+          <p>+2.4%</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Annie-Chien">Annie Chien</a>.
+  </div>
+   <!-- Chart.js -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <script src="app.js"></script>
+
+</body>
+</html>
