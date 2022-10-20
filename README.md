@@ -2,7 +2,7 @@
 
 This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). 
 
-✨ Here is the live site URL:
+✨ Here is the live site URL: https://app.netlify.com/sites/fementor-preview-card/settings/general
 
 ## The challenge
 
