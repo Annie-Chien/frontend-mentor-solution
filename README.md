@@ -11,3 +11,4 @@ A collection of all my Frontend Mentor challenge solutions.
 | FAQ accordion card | [Live](https://fementor-accordion-faq.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/faq-accordion-card)|
 | Expense chart | [Live](https://fementor-expense-chart.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/expense-chart) |
 | Time tracker dashboard | [Live](https://fementor-time-tracker.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/time-tracker-dashboard) |
+| Job Listing Filter | [Live](https://fementor-job-listings.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/job-listings-filter)|
