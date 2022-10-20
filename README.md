@@ -2,7 +2,7 @@
 
 This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt).
 
-✨ Here is the live site URL:
+✨ Here is the live site URL: https://fementor-job-listings.netlify.app
 
 ## The challenge
 
