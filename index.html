@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | 3-column preview card component</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .outline {
+        outline: 1px solid red;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orange: 'hsl(31, 77%, 52%)',
+              cyan: 'hsl(184, 100%, 22%)',
+              'cyan-dark': 'hsl(179, 100%, 13%)',
+              'gray-light': 'hsl(0, 0%, 95%)',
+            },
+            fontFamily: {
+              title: ['Big Shoulders Display', 'sans-serif'],
+              body: ['Lexend Deca', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen relative flex items-center">
+    <div
+      class="container w-4/5 mx-auto my-8 flex flex-col md:flex-row rounded overflow-hidden"
+    >
+      <div
+        class="bg-orange px-10 py-7 flex flex-col items-start gap-5 justify-around"
+      >
+        <img src="./images/icon-sedans.svg" alt="sedans" />
+        <h2 class="font-title text-gray-light text-3xl">Sedans</h2>
+        <p class="font-body text-gray-light/75">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button
+          class="bg-white px-4 py-2 mt-5 rounded-full text-orange hover:bg-orange/0 hover:text-gray-light border-2 border-gray-light transition duration-150 ease-in"
+        >
+          learn more
+        </button>
+      </div>
+      <div
+        class="bg-cyan px-10 py-7 flex flex-col items-start gap-5 justify-around"
+      >
+        <img src="./images/icon-suvs.svg" alt="suvs" />
+        <h2 class="font-title text-gray-light text-3xl">SUVs</h2>
+        <p class="font-body text-gray-light/75">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button
+          class="bg-white px-4 py-2 mt-5 rounded-full text-cyan hover:bg-cyan/0 hover:text-gray-light border-2 border-gray-light transition duration-150 ease-in"
+        >
+          learn more
+        </button>
+      </div>
+      <div
+        class="bg-cyan-dark px-10 py-7 flex flex-col items-start gap-5 justify-around"
+      >
+        <img src="./images/icon-luxury.svg" alt="luxury" />
+        <h2 class="font-title text-gray-light text-3xl">Luxury</h2>
+        <p class="font-body text-gray-light/75">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button
+          class="bg-white px-4 py-2 mt-5 rounded-full text-cyan-dark hover:bg-cyan-dark/0 hover:text-gray-light border-2 border-gray-light transition duration-150 ease-in"
+        >
+          learn more
+        </button>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0 attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Annie-Chien">Annie Chien</a>.
+      </div>
+    </div>
+  </body>
+</html>
