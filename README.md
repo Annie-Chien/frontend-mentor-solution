@@ -13,3 +13,4 @@ A collection of all my Frontend Mentor challenge solutions.
 | Time tracker dashboard | [Live](https://fementor-time-tracker.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/time-tracker-dashboard) |
 | Job Listing Filter | [Live](https://fementor-job-listings.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/job-listings-filter)|
 | 3-cols preview card | [Live](https://fementor-preview-card.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/3cols-preview-card)|
+| Coming soon page | [Live](https://fementor-coming-soon-page.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/coming-soon-page) |
