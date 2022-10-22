@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Goole Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: white;
+      }
+    </style>
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'red-desaturated': 'hsl(0, 36%, 70%)',
+              'red-soft': 'hsl(0, 93%, 68%)',
+              'red-grayish': 'hsl(0, 6%, 24%)',
+              gradient1: 'hsl(0, 80%, 86%)',
+              gradient2: 'hsl(0, 74%, 74%)',
+              gradient3: 'hsl(0, 0%, 100%)',
+              gradient4: 'hsl(0, 100%, 98%)',
+            },
+            fontFamily: {
+              josefin: ['Josefin Sans', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="md:min-h-screen font-josefin relative">
+    <nav class="p-5 sticky top-0 md:px-20 md:absolute mb-10">
+      <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+    </nav>
+    <section class="flex flex-col gap-10 pb-10 md:flex-row h-screen">
+      <div class="md:absolute right-0 top-0 bottom-0 md:max-w-[45%] mx-auto">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/hero-desktop.jpg"
+          />
+          <img
+            src="./images/hero-mobile.jpg"
+            alt="img"
+            class="max-w-full object-cover h-full"
+          />
+        </picture>
+      </div>
+      <div
+        class="hero-text flex flex-col justify-center gap-6 items-center text-center pl-5 md:max-w-[50%] max-w-[80%] md:text-left md:items-start md:px-20 mx-auto md:mx-0"
+      >
+        <h1
+          class="text-red-desaturated text-4xl uppercase font-light tracking-widest mt-4 md:text-6xl"
+        >
+          We're<span class="text-red-grayish font-semibold"
+            ><br />coming<br />soon</span
+          >
+        </h1>
+        <p class="text-red-desaturated">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form
+          novalidate
+          tabindex="1"
+          class="form-group border border-red-desaturated border rounded-full self-stretch text-left flex focus:outline-none relative"
+        >
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="py-2 px-5 rounded-full w-[80%] placeholder:text-red-desaturated outline-none bg-transparent"
+          />
+          <img
+            src="./images/icon-error.svg"
+            alt="error icon"
+            class="self-center mx-2 hidden"
+            id="error-icon"
+          />
+          <button
+            type="submit"
+            class="bg-gradient-to-br from-gradient1 to-gradient2 rounded-full w-[20%] flex justify-center items-center hover:from-gradient1/40 hover:to-gradient2 hover:scale-110 transition duration-150 shadow-2xl shadow-red-grayish"
+          >
+            <img src="./images/icon-arrow.svg" />
+          </button>
+          <p class="absolute -bottom-full left-3" id="msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="absolute bottom-0 left-0 right-0 bg-red-desaturated">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Annie-Chien">Annie Chien</a>.
+      </p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
