@@ -2,7 +2,7 @@
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 
-✨ Here is the live site URL: 
+✨ Here is the live site URL: https://fementor-testimonials-grid-section.netlify.app
 
 
 ## The challenge
