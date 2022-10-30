@@ -2,7 +2,7 @@
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
 
-✨ Here is the live site URL:
+✨ Here is the live site URL: https://fementor-news-homepage.netlify.app
 
 ## The challenge
 
