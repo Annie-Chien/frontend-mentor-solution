@@ -2,7 +2,7 @@
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). 
 
-✨ Here is the live site URL:
+✨ Here is the live site URL: https://fementor-sunnyside-page.netlify.app
 
 ## The challenge
 
