@@ -17,3 +17,4 @@ A collection of all my Frontend Mentor challenge solutions.
 | Testimonials grid section | [Live](https://fementor-testimonials-grid-section.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/testimonials-grid-section) |
 | Countries API | [Live](https://fe-countries-api.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/countries-api) |
 | News Homepage | [Live](https://fementor-news-homepage.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/news-homepage) |
+| Sunnyside landing page | [Live](https://fementor-sunnyside-page.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/sunnyside-landing-page) |
