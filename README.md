@@ -18,3 +18,4 @@ A collection of all my Frontend Mentor challenge solutions.
 | Countries API | [Live](https://fe-countries-api.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/countries-api) |
 | News Homepage | [Live](https://fementor-news-homepage.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/news-homepage) |
 | Sunnyside landing page | [Live](https://fementor-sunnyside-page.netlify.app) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/sunnyside-landing-page) |
+| Space tourism website | [Live](https://fementor-space-website.netlify.app/destination) | [Code](https://github.com/Annie-Chien/frontend-mentor-solution/tree/space-tourism-website) |
