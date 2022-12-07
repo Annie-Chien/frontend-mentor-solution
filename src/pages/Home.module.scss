@@ -1,0 +1,59 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.container {
+  width: 80%;
+  height: 75vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+  text-align: center;
+
+  @include respond(tablet) {
+    width: 60vw;
+  }
+
+  @include respond(desktop) {
+    width: 80vw;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+
+  @include respond(desktop) {
+    width: 50rem;
+  }
+}
+
+.exploreLink {
+  margin-top: auto;
+}
+
+.exploreBtn {
+  width: 15rem;
+  height: 15rem;
+  font-size: 2rem;
+  font-family: $ff-serif;
+  background-color: $clr-white;
+  text-transform: uppercase;
+  border-radius: 50%;
+  transition: all 0.35s;
+
+  &:hover {
+    box-shadow: 0 0 0 5rem rgba(21, 20, 20, 0.7);
+  }
+
+  @include respond(desktop) {
+    width: 25rem;
+    height: 25rem;
+    margin-top: 0;
+  }
+}

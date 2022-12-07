@@ -1,0 +1,154 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+/* ------------- */
+/*   CSS reset   */
+/* ------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $ff-sans-normal;
+  min-height: 100vh;
+  color: $clr-light;
+  background-color: $clr-dark;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $ff-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 8rem;
+  color: $clr-white;
+
+  @include respond(tablet) {
+    font-size: 15rem;
+  }
+}
+
+h2 {
+  font-size: 5.6rem;
+  color: $clr-white;
+  font-weight: 400;
+
+  @include respond(tablet) {
+    font-size: 8rem;
+  }
+  @include respond(tablet) {
+    font-size: 10rem;
+  }
+}
+
+h3 {
+  font-size: 2.4rem;
+  @include respond(tablet) {
+    font-size: 4rem;
+  }
+  @include respond(desktop) {
+    font-size: 5.6rem;
+  }
+}
+
+h4 {
+  font-size: 1.6rem;
+
+  @include respond(tablet) {
+    font-size: 2.4rem;
+  }
+  @include respond(desktop) {
+    font-size: 3.2rem;
+  }
+}
+
+h5 {
+  font-size: 1.6rem;
+  letter-spacing: 4.75px;
+  font-family: $ff-sans-cond;
+  text-transform: uppercase;
+
+  @include respond(tablet) {
+    font-size: 2rem;
+  }
+
+  @include respond(desktop) {
+    font-size: 2.8rem;
+  }
+}
+
+p {
+  font-family: $ff-sans-normal;
+  line-height: 25px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+hr {
+  border: 0.5px solid #979797;
+}
+
+// Shared Class
+.subheading-1 {
+  font-size: 2.8rem;
+}
+
+.subheading-2 {
+  font-size: 1.4rem;
+  font-family: $ff-sans-cond;
+  letter-spacing: 2.35px;
+}
+
+.navText {
+  font-size: 1.6rem;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title {
+  & > span {
+    color: $clr-white;
+    opacity: 0.25;
+    margin-right: 2rem;
+  }
+
+  @include respond(tablet) {
+    width: 100%;
+    text-align: left;
+  }
+}

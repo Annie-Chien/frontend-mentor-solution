@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.navbar {
+  min-height: 100vh;
+  width: 70vw;
+  background-color: rgba(33, 0, 0, 0.2);
+  padding: 8rem 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  z-index: 100;
+  transform: translateX(100%);
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  &::before {
+    content: '';
+    width: 40vw;
+    height: 0.5px;
+    background-color: #979797;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 96%;
+    display: none;
+
+    @include respond(desktop) {
+      display: block;
+    }
+  }
+
+  @include respond(tablet) {
+    min-height: fit-content;
+    padding: 3rem;
+    transform: translateX(0);
+    background-color: #9797971d;
+  }
+
+  @include respond(desktop) {
+    width: 50vw;
+    padding: 4rem;
+    top: 3rem;
+  }
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  @include respond(tablet) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+.navLink {
+  font-size: 1.6rem;
+  font-family: var(--ff-sans-cond);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $clr-white;
+  padding-bottom: 1rem;
+
+  &.active {
+    border-bottom: 3px solid $clr-white;
+  }
+
+  @include respond(tablet) {
+    padding-bottom: 2.8rem;
+  }
+}
+
+.navLinkLabel {
+  @include respond(tablet) {
+    display: none;
+  }
+  @include respond(desktop) {
+    display: inline;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 3.5rem;
+  right: 2.5rem;
+
+  @include respond(tablet) {
+    display: none;
+  }
+}

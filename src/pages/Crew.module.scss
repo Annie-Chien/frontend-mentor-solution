@@ -1,0 +1,90 @@
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  @include respond(tablet) {
+    padding-bottom: 0;
+  }
+
+  @include respond(desktop) {
+    width: 80%;
+    height: 75vh;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+.pic {
+  width: 60%;
+
+  @include respond(tablet) {
+    width: 50%;
+    order: 20;
+    margin-top: auto;
+  }
+
+  @include respond(desktop) {
+    width: 40rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.hr {
+  width: 100%;
+  margin-top: -3rem;
+
+  @include respond(tablet) {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+
+  & > li {
+    width: 1rem;
+    height: 1rem;
+    background-color: #979797;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &.active {
+      background-color: $clr-white;
+    }
+  }
+
+  @include respond(tablet) {
+    order: 15;
+  }
+  @include respond(desktop) {
+    margin-bottom: 5rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @include respond(tablet) {
+    width: 60%;
+    order: 10;
+  }
+  @include respond(desktop) {
+    width: 45%;
+  }
+}
