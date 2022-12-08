@@ -6,6 +6,7 @@ import styles from './Destination.module.scss';
 //Framer motion
 import { motion, useAnimationControls } from 'framer-motion';
 import { containerVariants } from '../animation';
+import { useMediaQuery } from '../assets/hooks/useMediaQuery.jsx';
 
 //========================================================//
 
@@ -18,11 +19,29 @@ const DestinationPage = () => {
     destinations[navIndex];
 
   const controls = useAnimationControls();
+  const isDesktop = useMediaQuery('(min-width:1440px)');
 
   useEffect(() => {
-    controls.set({ x: '150%' });
-    controls.start({ x: '0%', transition: { duration: 1, ease: 'easeOut' } });
-  }, [navIndex, controls]);
+    const animate = isDesktop
+      ? {
+          y: 0,
+          x: 0,
+          opacity: 1,
+          transition: { duration: 1, ease: 'easeOut' },
+        }
+      : {
+          x: 0,
+          y: 0,
+          opacity: 1,
+          transition: { duration: 1, ease: 'easeOut' },
+        };
+    const inital = isDesktop
+      ? { x: 0, y: '150%', opacity: 0 }
+      : { x: '150%', y: 0, opacity: 0 };
+
+    controls.set(inital);
+    controls.start(animate);
+  }, [navIndex, controls, isDesktop]);
 
   return (
     <motion.main

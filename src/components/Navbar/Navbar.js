@@ -5,7 +5,8 @@ import { Link, useMatch } from 'react-router-dom';
 import closeIcon from '../../assets/shared/icon-close.svg';
 //Styles
 import styles from './Navbar.module.scss';
-
+//Framer motion
+import { motion } from 'framer-motion';
 const navList = [
   { title: 'Home', path: '/' },
   { title: 'Destination', path: '/destination' },
@@ -28,13 +29,14 @@ const Navbar = ({ menuIsOpen, closeMenu }) => {
       <ul className={styles.navList}>
         {navList.map((item, index) => (
           <li key={index} onClick={() => setNavIndex(index)}>
-            <Link
-              to={item.path}
-              className={`${styles.navLink} ${
-                index === navIndex ? styles.active : ''
-              }`}
-            >
+            <Link to={item.path} className={styles.navLink}>
               <span className={styles.navLinkLabel}>0{index}</span> {item.title}
+              {index === navIndex ? (
+                <motion.div
+                  className={styles.underline}
+                  layoutId="underline"
+                ></motion.div>
+              ) : null}
             </Link>
           </li>
         ))}

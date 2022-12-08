@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  overflow-x: hidden;
 
   & > h5 {
     @include respond(tablet) {
@@ -62,6 +63,7 @@
 .pic {
   min-width: 17rem;
   width: 50%;
+  align-self: center;
 
   @include respond(desktop) {
     grid-column: 1 / 2;

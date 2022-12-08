@@ -61,9 +61,14 @@
     background-color: #979797;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.3s;
 
     &.active {
       background-color: $clr-white;
+    }
+
+    &:not(.active):hover {
+      background-color: #cfcdcd7c;
     }
   }
 

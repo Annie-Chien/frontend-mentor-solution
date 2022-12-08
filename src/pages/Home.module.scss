@@ -35,6 +35,10 @@
 
 .exploreLink {
   margin-top: auto;
+
+  @include respond(desktop) {
+    margin-top: 0;
+  }
 }
 
 .exploreBtn {
@@ -54,6 +58,5 @@
   @include respond(desktop) {
     width: 25rem;
     height: 25rem;
-    margin-top: 0;
   }
 }

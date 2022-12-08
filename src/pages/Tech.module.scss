@@ -66,6 +66,10 @@
       width: 8rem;
       height: 8rem;
     }
+
+    &:not(.active):hover {
+      background-color: #9797976e;
+    }
   }
   @include respond(desktop) {
     grid-column: 1/ 2;

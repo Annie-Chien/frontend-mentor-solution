@@ -8,7 +8,8 @@ import navLogo from '../../assets/shared/logo.svg';
 import toggleIcon from '../../assets/shared/icon-hamburger.svg';
 //Styles
 import styles from './Header.module.scss';
-
+//Framer motino
+import { motion } from 'framer-motion';
 //========================================================//
 
 const Header = () => {
@@ -23,13 +24,17 @@ const Header = () => {
       <Link to="/">
         <img src={navLogo} alt="logo" />
       </Link>
-      <button className={styles.toggleBtn}>
+      <motion.button
+        className={styles.toggleBtn}
+        whileHover={{ scale: 1.2 }}
+        initial={{ scale: 1 }}
+      >
         <img
           src={toggleIcon}
           onClick={() => setIsOpen(true)}
           alt="hamburger icon"
         />
-      </button>
+      </motion.button>
       <Navbar menuIsOpen={isOpen} closeMenu={closeMenu} />
     </header>
   );
