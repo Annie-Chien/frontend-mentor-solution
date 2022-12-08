@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 //React Router
 import { Link, useMatch } from 'react-router-dom';
 //Images
@@ -18,8 +18,12 @@ const navList = [
 
 const Navbar = ({ menuIsOpen, closeMenu }) => {
   const pathName = useMatch('/*').pathname;
-  const initialIndex = navList.findIndex((item) => item.path === pathName);
-  const [navIndex, setNavIndex] = useState(initialIndex);
+  const [navIndex, setNavIndex] = useState('/');
+
+  useEffect(() => {
+    const curIndex = navList.findIndex((item) => item.path === pathName);
+    setNavIndex(curIndex);
+  }, [pathName]);
 
   return (
     <nav className={`${styles.navbar} ${menuIsOpen ? styles.show : ''}`}>
