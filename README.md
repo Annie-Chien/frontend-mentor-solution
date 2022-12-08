@@ -2,6 +2,8 @@
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
+✨ Here is the live site URL: https://fementor-space-website.netlify.app/destination
+
 ## The challenge
 
 Your users should be able to:
@@ -12,7 +14,7 @@ Your users should be able to:
 
 ## Screenshots 📷
 
-![]()
+![](./src/assets/screenshot.png)
 
 ## Built with 🔧
 
